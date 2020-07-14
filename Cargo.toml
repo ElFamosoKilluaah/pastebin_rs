@@ -1,0 +1,17 @@
+[package]
+name = "pastebin_rs"
+description = "Just a small Pastebin crate to upload some pastes."
+
+version = "0.1.0"
+authors = ["Quentincestino <38379985+ElFamosoKilluaah@users.noreply.github.com>"]
+edition = "2018"
+readme = "README.md"
+license = "MIT"
+keywords = ["pastebin", "api"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+"reqwest" = { version = "0.10.6", features = ["cookies", "json"]}
+"tokio" = { version = "0.2", features = ["full"] }
+"futures" = "0.3.5"
